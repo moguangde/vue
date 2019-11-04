@@ -1,0 +1,189 @@
+// margin
+.no-margin {
+  margin: 0;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.margin-top {
+  margin-top: 24px;
+}
+
+.tables-btn {
+  margin-right: 8px;
+}
+
+// 社交图标
+.login-social {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+// 路由动效
+.opacity-enter {
+  opacity: 0;
+}
+
+.opacity-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.opacity-enter-to {
+  opacity: 1;
+}
+
+.opacity-leave {
+  opacity: 1;
+}
+
+.opacity-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.opacity-leave-to {
+  opacity: 0;
+}
+
+// 鼠标指针
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// 文字
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// 阴影
+.card-1 {
+  .box-shadow(0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24));
+  .transition(all 0.3s cubic-bezier(.25, .8, .25, 1));
+
+  &:hover {
+    .box-shadow(0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
+  }
+}
+
+.card-2 {
+  .box-shadow(0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
+}
+
+.card-3 {
+  .box-shadow(0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23));
+}
+
+.card-4 {
+  .box-shadow(0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
+}
+
+.card-5 {
+  .box-shadow(0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22));
+}
+
+
+// 以下内容为修改 iview 的默认样式
+.particles-js-canvas-el {
+  position: absolute;
+  left: 0;
+  top: @normal-height;
+  height: calc(100% - @normal-height) !important;
+}
+
+.ivu-affix {
+  width: 100% !important;
+}
+
+#side-md > .ivu-dropdown {
+  display: block;
+  padding: 10px 8px;
+  .margin-center();
+}
+
+// 过渡
+.wow-1 {
+  .animation-duration(1s)
+}
+
+.wow-2 {
+  .animation-duration(2s)
+}
+
+.wow-delay-1 {
+  .animation-delay(1s)
+}
+
+.wow-delay-2 {
+  .animation-delay(2s)
+}
+
+.full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+// 无法选中
+.select-none {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// 旋转动画
+.animation-rotate {
+  .keyframes(all,rotate,
+    {
+      0% {
+        transform: rotate(0deg)
+      }
+      25% {
+        transform: rotate(90deg)
+      }
+      50% {
+        transform: rotate(180deg)
+      }
+      75% {
+        transform: rotate(270deg)
+      }
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+  );
+  .animation (rotate 1s infinite linear);
+}
+
+// 浮动
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.choice {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}

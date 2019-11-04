@@ -1,0 +1,105 @@
+.margin-center() {
+  margin: 0 auto;
+}
+
+.flex-align-center() {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-wrap-align-between() {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.transition(@trans) {
+  -webkit-transition: @trans;
+  -moz-transition: @trans;
+  -ms-transition: @trans;
+  -o-transition: @trans;
+  transition: @trans;
+}
+
+.box-shadow(@shadow1, @shadow2) {
+  -moz-box-shadow: @shadow1, @shadow2;
+  -webkit-box-shadow: @shadow1, @shadow2;
+  box-shadow: @shadow1, @shadow2;
+}
+
+.box-shadow(@shadow) {
+  -moz-box-shadow: @shadow;
+  -webkit-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+  @keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+  @-moz-keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+  @-o-keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+  @-webkit-keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+  .keyframes(moz, @name, @content);
+  .keyframes(o, @name, @content);
+  .keyframes(webkit, @name, @content);
+  .keyframes(def, @name, @content);
+}
+
+.animation (@animation){
+  animation:@animation;
+  -moz-animation:@animation; /* Firefox */
+  -webkit-animation:@animation; /* Safari and Chrome */
+  -o-animation:@animation; /* Opera */
+}
+
+.animation-duration (@animation){
+  animation-duration:@animation;
+  -moz-animation-duration:@animation; /* Firefox */
+  -webkit-animation-duration:@animation; /* Safari and Chrome */
+  -o-animation-duration:@animation; /* Opera */
+}
+
+.animation-delay (@animation){
+  animation-delay:@animation;
+  -moz-animation-delay:@animation; /* Firefox */
+  -webkit-animation-delay:@animation; /* Safari and Chrome */
+  -o-animation-delay:@animation; /* Opera */
+}
